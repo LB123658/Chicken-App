@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>gBrowser Account</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+function locationFunction() {
+var x =  
+                document.getElementById("loc").name; 
+            
+            document.getElementById( 
+              "screen").innerHTML = x; 
+        }
+function aboutFunction() {
+var x =  
+                document.getElementById("abo").name; 
+            
+            document.getElementById( 
+              "screen").innerHTML = x; 
+        }
+
+function secureFunction() {
+var x =  
+                document.getElementById("secure").name; 
+            
+            document.getElementById( 
+              "screen").innerHTML = x; 
+        }
+
+function changeColor() {
+var x =  
+                document.getElementById("loc").value; 
+            
+            document.getElementById( 
+              "Europe_Geo_Bee").style = x; 
+        }
+
+function changeColora() {
+var x =  
+                document.getElementById("loc").value; 
+            
+            document.getElementById( 
+              "Asia_Geo_Bee").style = x; 
+        }
+
+function changeColorb() {
+var x =  
+                document.getElementById("loc").value; 
+            
+            document.getElementById( 
+              "home").style = x; 
+        }
+
+function changeColorc() {
+var x =  
+                document.getElementById("loc").value; 
+            
+            document.getElementById( 
+              "USA_Geo_Bee").style = x; 
+        }
+
+function resetAccount() {
+var x =  
+                document.getElementById("NorthAmerica_Geo_Bee").style; 
+            
+            document.getElementById( 
+              "home").style = x; 
+        }
+
+function resetSecurity() {
+var x =  
+                document.getElementById("NorthAmerica_Geo_Bee").style; 
+            
+            document.getElementById( 
+              "USA_Geo_Bee").style = x; 
+        }
+function resetAbout() {
+var x =  
+                document.getElementById("NorthAmerica_Geo_Bee").style; 
+            
+            document.getElementById( 
+              "Asia_Geo_Bee").style = x; 
+        }
+function resetLocation() {
+var x =  
+                document.getElementById("NorthAmerica_Geo_Bee").style; 
+            
+            document.getElementById( 
+              "Europe_Geo_Bee").style = x; 
+        }
+
+function accountFunction() {
+var x =  
+                document.getElementById("acc").name; 
+            
+            document.getElementById( 
+              "screen").innerHTML = x; 
+        }
+</script>
+<style>
+body {
+font-family: futura;
+cursor: default;
+}
+.menu {
+width: 180px;
+height: 35px;
+border: none;
+border-radius: 0px 15px 15px 0px;
+cursor: pointer;
+background: transparent;
+text-align: left;
+font-family: futura;
+font-size: 16px;
+}
+.menu:hover {
+color: black;
+background: #e0e0e0;
+}
+#uu {
+font-family: arial;
+}
+#topLink {
+font-size: 20px;
+float: left;
+height: 30px;
+border: none;
+background: transparent;
+width: 200px;
+cursor: pointer;
+color: #4285f4;
+}
+#uu:hover {
+text-decoration: underline;
+}
+#uu {
+color: grey;
+}
+#search {
+float: left;
+width: 50%;
+height: 30px;
+border: none;
+font-size: 20px;
+background: #e0e0e0;
+border-radius: 7px;
+}
+#icon:hover {
+border-radius: 50%;
+border: 2px solid lightgrey;
+cursor: pointer;
+}
+#screen {
+float: right;
+width: 60%;
+}
+</style>
+</head>
+<body>
+<div id="top">
+<a href="file:///Users/loganbrown/Desktop/gBrowser%20Account/Home.html">
+<button id="topLink">gBrowser <span id="uu">Home</span></button></a>
+<form action="file:///Users/loganbrown/Desktop/gBrowser%20Account/search%20results.html">
+<input type="text" placeholder=" Search" id="search"></form>
+<a href="file:///Users/loganbrown/Desktop/gBrowser%20Account/Sign%20in.html" target="_blank">
+<img src="https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/s440-c-fbw=1/photo.jpg" style="border-radius:50%; width:40px; height:40px; float: right;" id="icon"></img></a>
+</div>
+
+
+<p id="screen">Welcome to your gBrower controls account.<br><br><br><br><span style="color: lightgrey;">©2021 Texting Center Communications Corporation</span></p>
+<button class="menu" id="home" onclick="changeColorb(); resetSecurity(); resetAbout(); resetLocation(); accountFunction()">Account</button><br>
+<button class="menu" id="USA_Geo_Bee" onclick="secureFunction(); changeColorc(); resetAccount(); resetAbout(); resetLocation()">Security</button><br>
+<a href="file:///Users/loganbrown/Desktop/big%20folder/Websites/gBrowser.html" target="_blank">
+<button class="menu" id="NorthAmerica_Geo_Bee">gBrowser</button></a><br>
+<a href="https://sites.google.com/view/web-store1/home" target="_blank">
+<button class="menu" id="South_Geo_Bee">Web Store</button><br></a>
+
+<a href="https://sites.google.com/view/texting-center-communications/home" target="_blank">
+<button class="menu" id="Africa_Geo_Bee">Corporate Center</button><br></a>
+
+<button class="menu" id="Asia_Geo_Bee" onclick="aboutFunction(); changeColora(); resetAccount(); resetSecurity(); resetLocation()">About</button><br>
+<button class="menu" id="Europe_Geo_Bee" onclick="locationFunction(); changeColor(); resetAccount(); resetSecurity(); resetAbout()">Your Location</button><br><br>
+
+
+
+<input type="hidden" id="loc" name="gBrowser cannot access your location.<br><br><br> Your information is secure." value="background: #c2d6ff;">
+
+<input type="hidden" id="abo" name="gBrowser ©2021 Texting Center Communications Corporation<br><br><br>gBrowser Control center account ©2021 Texting Center Communications Corporation<br><br><br>eBrowser+ ©2021 Texting Center Communications Corporation<br><br><br>Web Store ©2021 Texting Center Communications Corporation<br><br><br>">
+
+<input type="hidden" id="secure" name="Your account is secure.<br><br><br>gBrowser and your gBrowser control center account never track you or your search history<br><br><br>No ads shown...">
+
+<input type="hidden" id="acc" name="Welcome to your gBrowser controls account. <br><br><br>From here you can monitor your security and more.<br><br><br>Member since 2021<br><br><br>Account status: secure > no ads, no tracking">
+</body>
+</html>
