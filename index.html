@@ -1,9 +1,12 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 <title>gBrowser Account</title>
   <link rel='icon' href='https://drive.google.com/thumbnail?id=1vlBV9onFWQLszILsmnmmpBsD7fcTT9qR' type='image/png'/ >
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 <script>
 function locationFunction() {
 var x =  
@@ -113,6 +116,7 @@ background: transparent;
 text-align: left;
 font-family: futura;
 font-size: 16px;
+color: grey;
 }
 .menu:hover {
 color: black;
@@ -155,6 +159,100 @@ cursor: pointer;
 float: right;
 width: 60%;
 }
+.material-icons-outlined {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  text-transform: none;
+  line-height: 1;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+#accountIcon {
+position: absolute;
+top: 48px;
+left: 12px;
+}
+#accountHtml {
+position: absolute;
+top: 48px;
+left: 38px;
+}
+#securityIcon {
+position: absolute;
+top: 80px;
+left: 12px;
+}
+#securityHtml {
+position: absolute;
+top: 80px;
+left: 38px;
+}
+#gSearch {
+position: absolute;
+top: 115px;
+left: 12px;
+}
+#gHtml {
+position: absolute;
+top: 115px;
+left: 38px;
+}
+#bagIcon {
+position: absolute;
+top: 150px;
+left: 12px;
+}
+#storeHtml {
+position: absolute;
+top: 150px;
+left: 38px;
+}
+#corpIcon {
+position: absolute;
+top: 185px;
+left: 12px;
+}
+#cHtml {
+position: absolute;
+top: 185px;
+left: 38px;
+}
+#aboutIcon {
+position: absolute;
+top: 221px;
+left: 12px;
+}
+#aboutHtml {
+position: absolute;
+top: 221px;
+left: 38px;
+}
+#locIcon {
+position: absolute;
+top: 256px;
+left: 12px;
+}
+#locHtml {
+position: absolute;
+top: 256px;
+left: 38px;
+}
 </style>
 </head>
 <body>
@@ -168,18 +266,30 @@ width: 60%;
 
 
 <p id="screen">Welcome to your gBrower controls account.<br><br><br><br><span style="color: lightgrey;">©2021 Texting Center Communications Corporation</span></p>
-<button class="menu" id="home" onclick="changeColorb(); resetSecurity(); resetAbout(); resetLocation(); accountFunction()">Account</button><br>
-<button class="menu" id="USA_Geo_Bee" onclick="secureFunction(); changeColorc(); resetAccount(); resetAbout(); resetLocation()">Security</button><br>
+<button class="menu" id="home" onclick="changeColorb(); resetSecurity(); resetAbout(); resetLocation(); accountFunction()"><span class="material-icons-outlined" id="accountIcon">
+account_circle
+</span> <span id="accountHtml">Account</span></button><br>
+<button class="menu" id="USA_Geo_Bee" onclick="secureFunction(); changeColorc(); resetAccount(); resetAbout(); resetLocation()"><span class="material-icons-outlined" id="securityIcon">
+verified_user
+</span> <span id="securityHtml">Security</span></button><br>
 <a href="https://lb123658.github.io/g-browser/?tab=gBrowser%20account%20open" target="_blank">
-<button class="menu" id="NorthAmerica_Geo_Bee">gBrowser</button></a><br>
+<button class="menu" id="NorthAmerica_Geo_Bee"><span class="material-icons-outlined" id="gSearch">
+search
+</span> <span id="gHtml">gBrowser</span></button></a><br>
 <a href="https://sites.google.com/view/web-store1/home" target="_blank">
-<button class="menu" id="South_Geo_Bee">Web Store</button><br></a>
+<button class="menu" id="South_Geo_Bee"> <span class="material-icons-outlined" id="bagIcon">shopping_bag</span> <span id="storeHtml">Web Store</span></button><br></a>
 
 <a href="https://sites.google.com/view/texting-center-communications/home" target="_blank">
-<button class="menu" id="Africa_Geo_Bee">Corporate Center</button><br></a>
+<button class="menu" id="Africa_Geo_Bee"><span class="material-icons-outlined" id="corpIcon">
+business
+</span> <span id="cHtml">Corporate Center</span></button><br></a>
 
-<button class="menu" id="Asia_Geo_Bee" onclick="aboutFunction(); changeColora(); resetAccount(); resetSecurity(); resetLocation()">About</button><br>
-<button class="menu" id="Europe_Geo_Bee" onclick="locationFunction(); changeColor(); resetAccount(); resetSecurity(); resetAbout()">Your Location</button><br><br>
+<button class="menu" id="Asia_Geo_Bee" onclick="aboutFunction(); changeColora(); resetAccount(); resetSecurity(); resetLocation()"><span class="material-icons-outlined" id="aboutIcon">
+info
+</span> <span id="aboutHtml">About</span></button><br>
+<button class="menu" id="Europe_Geo_Bee" onclick="locationFunction(); changeColor(); resetAccount(); resetSecurity(); resetAbout()"><span class="material-icons-outlined" id="locIcon">
+location_on
+</span> <span id="locHtml">Your Location</span></button><br><br>
 
 
 
