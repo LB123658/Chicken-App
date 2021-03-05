@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>gBrowser account search results</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#demo {
+text-align: center;
+color: grey;
+font-family: futura;
+font-size: 30px;
+}
+</style>
+</head>
+<body onload="search()">
+
+<h2 id="demo" onclick="search()">gBrowser</h2>
+
+
+<script>
+function search() {
+var search = window.location.search;
+document.getElementById("demo") = "There are no results for " + search;
+}
+}
+</script>
+</body>
+</html>
